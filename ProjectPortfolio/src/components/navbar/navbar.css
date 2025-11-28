@@ -1,0 +1,40 @@
+.navbar{
+    height: 6rem;
+    width: 100vw;
+    max-width: 85rem;
+    margin: 0 auto;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: center;
+    
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.logo{
+    width: 10rem;
+    margin-left: 6rem;
+}
+.desktopMenu{
+    margin-left: 2rem;
+}
+
+.desktopMenuListItem{
+    font-weight: 700;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.desktopMenuBtn{
+   background: rgb(233, 181, 49);
+   margin-left: 15rem;
+   padding: 1rem 2rem;
+   font: 1rem sans-serif;
+   font-weight: 700;
+   border: 2px solid;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
