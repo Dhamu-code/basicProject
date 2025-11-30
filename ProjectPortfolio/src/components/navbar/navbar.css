@@ -1,34 +1,43 @@
 .navbar{
-    height: 6rem;
-    width: 100vw;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
     max-width: 85rem;
     margin: 0 auto;
     padding: 1rem .5rem;
     display: flex;
     align-items: center;
-    
+    justify-content: space-between;
     position: sticky;
     top: 0;
     z-index: 3;
+    background: white;
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    
 }
-
 .logo{
     width: 10rem;
-    margin-left: 6rem;
+    margin-left: 1rem;
+    max-width: 100%; /* Ensure logo doesn't overflow */
 }
+
 .desktopMenu{
     margin-left: 2rem;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap if needed */
 }
 
 .desktopMenuListItem{
     font-weight: 700;
     margin: 1rem;
     cursor: pointer;
+    white-space: nowrap; /* Prevent text wrapping */
 }
 
 .desktopMenuBtn{
    background: rgb(233, 181, 49);
-   margin-left: 15rem;
+   margin-right: 1rem;
    padding: 1rem 2rem;
    font: 1rem sans-serif;
    font-weight: 700;
@@ -36,5 +45,122 @@
    display: flex;
    align-items: center;
    justify-content: center;
+   white-space: nowrap;
+}
 
+/* Mobile Menu Styles */
+.mobileMenu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 1rem;
+    z-index: 1001;
+}
+
+.mobileMenu span {
+    width: 25px;
+    height: 3px;
+    background: #333;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+.mobileMenuOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 999;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobileMenuOverlay.active {
+    display: flex;
+}
+
+.mobileMenuOverlay .desktopMenuListItem {
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.mobileMenuOverlay .mobileMenuBtn {
+    background: rgb(233, 181, 49);
+    padding: 1rem 2rem;
+    font: 1rem sans-serif;
+    font-weight: 700;
+    border: 2px solid;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.closeMenu {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+/* Media Queries for Navbar */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 1rem;
+    }
+    
+    .logo {
+        margin-left: 1rem;
+        width: 8rem;
+    }
+    
+    .desktopMenuBtn {
+        margin-right: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+    
+    .desktopMenuListItem {
+        margin: 0.5rem; /* Reduce margin on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .desktopMenu {
+        display: none;
+    }
+    
+    .desktopMenuBtn {
+        display: none;
+    }
+    
+    .mobileMenu {
+        display: flex;
+    }
+    
+    .logo {
+        margin-left: 0.5rem;
+        width: 7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        height: 5rem;
+        padding: 0.5rem;
+    }
+    
+    .logo {
+        width: 6rem;
+        margin-left: 0.5rem;
+    }
+    
+    .mobileMenu {
+        margin-right: 0.5rem;
+    }
 }
