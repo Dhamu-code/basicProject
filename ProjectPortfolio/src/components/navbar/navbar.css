@@ -2,9 +2,8 @@
 
     font-family: "Poppins", sans-serif;
     font-weight: lighter;
-    max-width: 85rem;
     margin: 0 auto;
-    padding: 1rem .5rem;
+    padding: 1rem 9rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,9 +22,8 @@
 }
 
 .desktopMenu{
-    margin-left: 2rem;
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap if needed */
+    flex-wrap: wrap;
 }
 
 .desktopMenuListItem{

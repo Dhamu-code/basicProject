@@ -3,6 +3,7 @@
     width: 100%;
     background-color: rgb(248, 238, 200);
     overflow: hidden;
+    
 }
 .services{
     margin-top: 2rem;
@@ -12,6 +13,7 @@
 }
 
 .servicebtn{
+    background-color: rgb(248, 238, 200);
     font-size: 1.2rem;
     width: 6.5rem;
     padding: 4px;
@@ -30,6 +32,7 @@
     font-family: 'Inter', sans-serif;
     margin-top: 2rem;
     margin-left: 8rem;
+    padding-bottom: 2rem;
     display: grid;
     height: 100%;
     grid-template-columns: repeat(3, 28%);

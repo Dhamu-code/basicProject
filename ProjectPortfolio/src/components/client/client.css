@@ -1,0 +1,78 @@
+#client{
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+}
+.clientWord{
+     margin-top: 1rem;
+    margin-left: 3rem;
+    padding-top: 2rem;
+    padding-left: 4rem;
+}
+.clientWord h1{
+     font-family: 'Inter',sans-serif;
+    font-size:3rem;
+}
+.test{
+    font-size: 1.2rem;
+    width: 7rem;
+    padding: 4px;
+    font-weight: 500;
+    color: #5c64cf;
+    margin-left: 13px;
+    border: 2px solid #5c64cf;
+    transform: rotate(0.95turn);
+    transform-origin: left;
+}
+.clientFlex{
+    display: flex;
+    height: 90%;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+.clientFlex img{
+    height: 20vh;
+    border-radius: 48%;
+    margin-top: 2rem;
+}
+.clientFlex .one{
+    
+    width: 23vw;
+    height: 50vh;
+    text-align: center;
+    border: 2px solid black;
+
+}
+.clientFlex .two{
+     width: 23vw;
+    height: 50vh;
+    text-align: center;
+    border: 2px solid black;
+}
+.clientFlex .three{
+     width: 23vw;
+    height: 50vh;
+    text-align: center;
+    border: 2px solid black;
+}
+.clientFlex p{
+    color: rgb(103, 101, 101);
+    padding: 0 1rem;
+    font-size: 1rem;
+}
+.clientFlex #name{
+    font-weight: 700;
+    color: black;
+    margin-bottom: 0.5rem;
+}
+.one:hover{
+    box-shadow: 5px 5px 1px rgb(0,0,0.3);
+}
+.two:hover{
+    box-shadow: 5px 5px 1px rgb(0,0,0.3);
+}
+.three:hover{
+    box-shadow: 5px 5px 1px rgb(0,0,0.3);
+}

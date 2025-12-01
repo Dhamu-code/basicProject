@@ -1,0 +1,149 @@
+#projects{
+    height: 140vh;
+    width: 100%;
+    background-color: rgb(244, 241, 225);
+    overflow: hidden;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+.latPro{
+     margin-top: 2rem;
+    margin-left: 3rem;
+    padding-top: 3rem;
+    padding-left: 4rem;
+}
+.latPro h1{
+    font-family: 'Inter',sans-serif;
+    font-size:3rem;
+}
+.portfolio{
+    background-color: rgb(236, 231, 210);
+    font-size: 1.2rem;
+    width: 6.5rem;
+    padding: 4px;
+    font-weight: 500;
+    color: #5c64cf;
+    margin-left: 13px;
+    border: 2px solid #5c64cf;
+    transform: rotate(0.95turn);
+    transform-origin: left;
+}
+.proGrid{
+    font-family: 'Inter', sans-serif;
+    margin-top: 2rem;
+    margin-left: 7rem;
+    padding-bottom: 2rem;
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(3, 29%);
+    grid-template-rows: repeat(2, 50vh);
+    grid-gap: 3rem 3rem;
+    overflow: hidden;
+}
+.proGrid img{
+    height: 79%;
+    width: 100%;
+    border-bottom: 2px solid;
+} 
+.proGrid .first{
+    overflow: hidden;
+    border: 2px solid ;
+    background: white;
+}
+.proGrid .first h3{
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+}
+.proGrid .first p{
+    padding: 0.9rem;
+    color: rgb(103, 101, 101);
+    font-size: 1rem;
+}
+.proGrid .sec{
+    overflow: hidden;
+    border: 2px solid ;
+    background: white;
+}
+.proGrid .sec h3{
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+}
+.proGrid .sec p{
+    padding: 0.9rem;
+    color: rgb(103, 101, 101);
+    font-size: 1rem;
+}
+.proGrid .third{
+    overflow: hidden;
+    border: 2px solid ;
+    background: white;
+}
+.proGrid .third h3{
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+}
+.proGrid .third p{
+    padding: 0.9rem;
+    color: rgb(103, 101, 101);
+    font-size: 1rem;
+}
+.proGrid .four{
+    overflow: hidden;
+    border: 2px solid ;
+    background: white;
+}
+.proGrid .four h3{
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+}
+.proGrid .four p{
+    padding: 0.9rem;
+    color: rgb(103, 101, 101);
+    font-size: 1rem;
+}
+.proGrid .fifth{
+    overflow: hidden;
+    border: 2px solid ;
+    background: white;
+}
+.proGrid .fifth h3{
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+}
+.proGrid .fifth p{
+    padding: 0.9rem;
+    color: rgb(103, 101, 101);
+    font-size: 1rem;
+}
+.proGrid .six{
+    overflow: hidden;
+    border: 2px solid ;
+    background: white;
+}
+.proGrid .six h3{
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+}
+.proGrid .six p{
+    padding: 0.9rem;
+    color: rgb(103, 101, 101);
+    font-size: 1rem;
+}
+.first:hover{
+     box-shadow: 5px 5px 1px rgb(0,0,0.3);
+}
+.sec:hover{
+     box-shadow: 5px 5px 1px rgb(0,0,0.3);
+}
+.third:hover{
+     box-shadow: 5px 5px 1px rgb(0,0,0.3);
+}
+.four:hover{
+     box-shadow: 5px 5px 1px rgb(0,0,0.3);
+}
+.fifth:hover{
+     box-shadow: 5px 5px 1px rgb(0,0,0.3);
+}
+.six:hover{
+     box-shadow: 5px 5px 1px rgb(0,0,0.3);
+}
