@@ -18,34 +18,20 @@ const Projects = () => {
         <div className="proGrid">
             <div className="first">
                 <img src={pro1} alt="project-1" />
-                <h3>Agency Landing Page</h3>
-                <p>Web/WordPress</p>
+                <h3>Employee Attendance & Payroll</h3>
+                <p>MERN Full stack</p>
             </div>
             <div className="sec">
                 <img src={pro2} alt="project-2" />
-                <h3>Agency Landing Page</h3>
-                <p>Web/WordPress</p>
+                <h3>Restaurant Ordering System</h3>
+                <p>MERN Full stack</p>
             </div>
             <div className="third">
                 <img src={pro3} alt="project-3" />
-                <h3>Agency Landing Page</h3>
-                <p>Web/WordPress</p>
+                <h3>Online Grocery & Meat Delivery Platform</h3>
+                <p>MERN Full stack</p>
             </div>
-            <div className="four">
-                <img src={pro4} alt="project-4" />
-                <h3>Agency Landing Page</h3>
-                <p>Web/WordPress</p>
-            </div>
-            <div className="fifth">
-                <img src={pro5} alt="project-5" />
-                <h3>Agency Landing Page</h3>
-                <p>Web/WordPress</p>
-            </div>
-            <div className="six">
-                <img src={pro6} alt="project-6" />
-                <h3>Agency Landing Page</h3>
-                <p>Web/WordPress</p>
-            </div>
+            
         </div>
     </div>    
     </>

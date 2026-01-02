@@ -1,17 +1,17 @@
 @import 'devicon/devicon.min.css';
 
-.skillGrid{
+.skillGrid {
     font-family: 'Inter', sans-serif;
-    height: 120vh;
+    height: 110vh;
     width: 100%;
     margin-left: 3rem;
     margin-bottom: 2rem;
     padding: 2rem;
     display: flex;
     justify-content: space-between;
-   
 }
-.expBtn{
+
+.expBtn {
     font-size: 1rem;
     width: 14vh;
     padding: 7px;
@@ -24,130 +24,72 @@
     transform-origin: left;
 }
 
-.skills{
+.skills {
     width: 45%;
     margin-left: 1.5rem;
 }
-.skills h1{
+
+.skills h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
-.skills p{
+
+.skills p {
     color: rgb(103, 101, 101);
     font-size: 1.2rem;
     margin-left: 1.5rem;
 }
-.skills h2{
+
+.skills h2 {
     margin-top: 2rem;
     margin-bottom: 2rem;
     margin-left: 1.5rem;
     font-size: 2rem;
 }
-.mySkills{
-   padding-bottom: 1rem;
-   display: grid;
-   grid-template-columns: repeat(2 , 45%);
-   gap: 1rem 1rem;
-   justify-content: center;
-   
+
+.mySkills {
+    padding-bottom: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    gap: 1rem 1rem;
+    justify-content: center;
 }
-.htmlIcon{
+
+.htmlIcon,
+.cssIcon,
+.reactIcon,
+.angularIcon,
+.appleIcon,
+.androidIcon {
     border: 2px solid black;
     padding: 1rem;
     overflow: hidden;
     display: flex;
 }
-.htmlIcon:hover{
-    box-shadow: 3px 3px 1px rgb(0,0,0.3);
+
+.htmlIcon:hover,
+.cssIcon:hover,
+.reactIcon:hover,
+.angularIcon:hover,
+.appleIcon:hover,
+.androidIcon:hover {
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.3);
 }
-.htmlIcon p{
+
+.htmlIcon p,
+.cssIcon p,
+.reactIcon p,
+.angularIcon p,
+.appleIcon p,
+.androidIcon p {
     margin-left: 1.5rem;
     margin-top: 0.8rem;
     font-size: 1rem;
     font-weight: 500;
     color: black;
 }
-.cssIcon{
-    border: 2px solid black;
-    padding: 1rem;
-    overflow: hidden;
-    display: flex;
-}
-.cssIcon:hover{
-    box-shadow: 3px 3px 1px rgb(0,0,0.3);
-}
-.cssIcon p{
-    margin-left: 1.5rem;
-    margin-top: 0.8rem;
-    font-size: 1rem;
-    font-weight: 500;
-    color: black;
-}
-.reactIcon{
-    border: 2px solid black;
-    padding: 1rem;
-    overflow: hidden;
-    display: flex;
-}
-.reactIcon:hover{
-    box-shadow: 3px 3px 1px rgb(0,0,0.3);
-}
-.reactIcon p{
-    margin-left: 1.5rem;
-    margin-top: 0.8rem;
-    font-size: 1rem;
-    font-weight: 500;
-    color: black;
-}
-.angularIcon{
-    border: 2px solid black;
-    padding: 1rem;
-    overflow: hidden;
-    display: flex;
-}
-.angularIcon:hover{
-     box-shadow: 3px 3px 1px rgb(0,0,0.3);
-}
-.angularIcon p{
-    margin-left: 1.5rem;
-    margin-top: 0.8rem;
-    font-size: 1rem;
-    font-weight: 500;
-    color: black;
-}
-.appleIcon{
-    border: 2px solid black;
-    padding: 1rem;
-    overflow: hidden;
-    display: flex;
-}
-.appleIcon:hover{
-    box-shadow: 3px 3px 1px rgb(0,0,0.3);
-}
-.appleIcon p{
-    margin-left: 1.5rem;
-    margin-top: 0.8rem;
-    font-size: 1rem;
-    font-weight: 500;
-    color: black;
-}
-.androidIcon{
-    border: 2px solid black;
-    padding: 1rem;
-    overflow: hidden;
-    display: flex;
-}
-.androidIcon:hover{
-     box-shadow: 3px 3px 1px rgb(0,0,0.3);
-}
-.androidIcon p{
-    margin-left: 1.5rem;
-    margin-top: 0.8rem;
-    font-size: 1rem;
-    font-weight: 500;
-    color: black;
-}
-.experience{
+
+.experience {
     width: 45%;
     margin-top: 4rem;
     padding-right: 10rem;
@@ -155,84 +97,330 @@
     flex-direction: column;
     overflow: hidden;
 }
-.experience h1{
-    font-size: 3rem;
 
+.experience h1 {
+    font-size: 3rem;
 }
-#exp1{
-    display: flex;
-    margin-top: 2rem;
-    padding-top: 1rem;
-    border-top: 2px solid black;
-}
-#exp1 .two{
-    margin-left: 2rem;
-}
-#exp1 .two p{
-    color: rgb(103, 101, 101);
-    font-size: 1rem;
-}
-#exp2{
-    display: flex;
-    margin-top: 2rem;
-    padding-top: 1rem;
-    border-top: 2px solid black;
-}
-#exp2 .two{
-    margin-left: 2rem;
-}
-#exp2 .two p{
-    color: rgb(103, 101, 101);
-    font-size: 1rem;
-}
+
+#exp1,
+#exp2,
 #exp3{
     display: flex;
     margin-top: 2rem;
     padding-top: 1rem;
     border-top: 2px solid black;
 }
+
+#exp1 .two,
+#exp2 .two,
 #exp3 .two{
     margin-left: 2rem;
 }
+
+#exp1 .two p,
+#exp2 .two p,
 #exp3 .two p{
     color: rgb(103, 101, 101);
     font-size: 1rem;
 }
-#exp4{
-    display: flex;
-    margin-top: 2rem;
+
+#exp3 {
     margin-bottom: 2rem;
-    padding-top: 1rem;
-    border-top: 2px solid black;
-   
 }
-#exp4 .two{
-    margin-left: 2rem;
-}
-#exp4 .two p{
-    color: rgb(103, 101, 101);
-    font-size: 1rem;
-}
-.avatar{
-    height: 20vh;
-    width: 11vw;
-    margin-left: 8rem;
-    background: rgb(236, 211, 190);
+
+.avatar {
     border-radius: 49% 49%;
     justify-content: center;
-    overflow: hidden;
+    margin-left: 4rem;
+    overflow: hidden; 
+    border: 1.5px solid black;
 }
-.experience img{
+
+.experience img {
     margin-top: 0.4rem;
     height: 100%;
     width: 100%;
 }
-.hireMe{
+
+.hireMe {
     background: rgb(233, 181, 49);
     height: 3rem;
     width: 6rem;
     font-weight: 600;
     border: 2px solid black;
-    margin-left: 10rem;
+    margin-left: 9rem;
     margin-top: 3rem;
+}
+.hireMe:hover{
+    background: #5c64cf;
+    color:white;
+    border: white;
+}
+
+/* Tablet Devices (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .skillGrid {
+        flex-direction: column;
+        height: auto;
+        margin-left: 1rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .skills,
+    .experience {
+        width: 100%;
+        margin-left: 0;
+        padding-right: 0;
+    }
+    
+    .expBtn {
+        margin-top: 3rem;
+        width: 12vh;
+    }
+    
+    .skills h1,
+    .experience h1 {
+        font-size: 2.5rem;
+    }
+    
+    .mySkills {
+        grid-template-columns: repeat(3, 30%);
+        gap: 0.8rem;
+    }
+    
+    .experience {
+        margin-top: 3rem;
+    }
+    
+    #exp1,
+    #exp2,
+    #exp3,
+    #exp4 {
+        margin-top: 1.5rem;
+        padding-top: 0.8rem;
+    }
+    
+    .avatar {
+        width: 150px;
+        height: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .hireMe {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Mobile Devices (up to 768px) */
+@media screen and (max-width: 768px) {
+    .skillGrid {
+        margin-left: 0.5rem;
+        padding: 0.5rem;
+    }
+    
+    .skills h1,
+    .experience h1 {
+        font-size: 2rem;
+    }
+    
+    .skills h2 {
+        font-size: 1.5rem;
+        margin-left: 0;
+    }
+    
+    .skills p {
+        margin-left: 0;
+        font-size: 1rem;
+    }
+    
+    .mySkills {
+        grid-template-columns: repeat(2, 48%);
+        gap: 0.5rem;
+    }
+    
+    .htmlIcon,
+    .cssIcon,
+    .reactIcon,
+    .angularIcon,
+    .appleIcon,
+    .androidIcon {
+        padding: 0.8rem;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .htmlIcon p,
+    .cssIcon p,
+    .reactIcon p,
+    .angularIcon p,
+    .appleIcon p,
+    .androidIcon p {
+        margin-left: 0;
+        margin-top: 0.5rem;
+        font-size: 0.9rem;
+    }
+    
+    /* Adjust icon sizes for mobile */
+    .htmlIcon svg,
+    .cssIcon svg,
+    .reactIcon svg,
+    .angularIcon svg,
+    .appleIcon svg,
+    .androidIcon svg {
+        width: 40px;
+        height: 40px;
+    }
+    
+    #exp1,
+    #exp2,
+    #exp3,
+    #exp4 {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    
+    #exp1 .two,
+    #exp2 .two,
+    #exp3 .two,
+    #exp4 .two {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+    
+    .experience h1 {
+        margin-top: 2rem;
+    }
+    
+    .avatar {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .hireMe {
+        width: 100%;
+        max-width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Small Mobile Devices (up to 480px) */
+@media screen and (max-width: 480px) {
+    .skills h1,
+    .experience h1 {
+        font-size: 1.8rem;
+    }
+    
+    .mySkills {
+        grid-template-columns: repeat(2, 48%);
+        gap: 0.5rem;
+    }
+    
+    .htmlIcon,
+    .cssIcon,
+    .reactIcon,
+    .angularIcon,
+    .appleIcon,
+    .androidIcon {
+        padding: 0.6rem;
+    }
+    
+    .htmlIcon p,
+    .cssIcon p,
+    .reactIcon p,
+    .angularIcon p,
+    .appleIcon p,
+    .androidIcon p {
+        font-size: 0.8rem;
+        margin-top: 0.3rem;
+    }
+    
+    /* Further reduce icon sizes for very small screens */
+    .htmlIcon svg,
+    .cssIcon svg,
+    .reactIcon svg,
+    .angularIcon svg,
+    .appleIcon svg,
+    .androidIcon svg {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .expBtn {
+        width: 13vh;
+        font-size: 0.9rem;
+        padding: 5px;
+    }
+    
+    .avatar {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Large Desktop Screens (min-width: 1440px) */
+@media screen and (min-width: 1440px) {
+    .skillGrid {
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .skills h1,
+    .experience h1 {
+        font-size: 3.5rem;
+    }
+    
+    .mySkills {
+        grid-template-columns: repeat(3, 30%);
+    }
+    
+    .avatar {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+/* Ultra-wide Screens (min-width: 1920px) */
+@media screen and (min-width: 1920px) {
+    .skillGrid {
+        max-width: 1800px;
+    }
+    
+    .skills h1,
+    .experience h1 {
+        font-size: 4rem;
+    }
+    
+    .skills p {
+        font-size: 1.3rem;
+    }
+    
+    .skills h2 {
+        font-size: 2.5rem;
+    }
+    
+    .htmlIcon p,
+    .cssIcon p,
+    .reactIcon p,
+    .angularIcon p,
+    .appleIcon p,
+    .androidIcon p {
+        font-size: 1.2rem;
+    }
+    
+    /* Increase icon sizes for ultra-wide screens */
+    .htmlIcon svg,
+    .cssIcon svg,
+    .reactIcon svg,
+    .angularIcon svg,
+    .appleIcon svg,
+    .androidIcon svg {
+        width: 60px;
+        height: 60px;
+    }
 }

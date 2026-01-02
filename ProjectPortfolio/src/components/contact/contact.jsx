@@ -1,6 +1,7 @@
 import React from 'react'
 import './contact.css'
-import { MdEmail } from "react-icons/md";
+// import email from "../../assets/email.jpg"
+import { HiOutlineMail } from "react-icons/hi";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdLocationPin } from "react-icons/md";
 import pic from "../../assets/pic.svg"
@@ -8,15 +9,14 @@ import pic from "../../assets/pic.svg"
 const Contact = () => {
   return (
     <>
-    <div className='dis'>
+    <div className='contact'>
         <div className="discuss">
             <button className="contBtn">Contact</button>
             <h1>Let's Discuss Project</h1>
         </div>
-        <div className="contGrid">
+        <div className="contGrid" id='Contact'>
             <div className="getDiv">
                 <h1>Get in touch</h1>
-                <p>Our friendly team would love to hear from you.</p>
                 <div className="nameEmail">
                    <div className="1">
                      <p>First name</p>
@@ -36,25 +36,26 @@ const Contact = () => {
             <div className="details">
                 <div className="detailFlex">
                     <div className="phoneIcon">
-                        <FaPhoneAlt />
+                        <FaPhoneAlt id='phone'/>
                     </div>
                     <div className="phone">
                         <p>Phone</p>
-                        <h2>+01 123 654 8096</h2>
+                        <h2>+91 8189820917</h2>
                     </div>
                     <div className="emailIcon">
-                        <MdEmail />
+                        {/* <img src={email} alt="email" id='email' /> */}
+                        <HiOutlineMail id='email1'/>
                     </div>
                     <div className="email">
                         <p>Mail</p>
-                        <h2>info@domainname.com</h2>
+                        <h2>dhamodharan130602@gmail.com</h2>
                     </div>
                     <div className="locIcon">
-                        <MdLocationPin />
+                        <MdLocationPin id='loc'/>
                     </div>
                     <div className="location">
-                        <p>Visit My Studio</p>
-                        <h2>Warnwe Park Streetperrine,<br/>FL 33157 New York City</h2>
+                        <p>Visit Me At</p>
+                        <h2>Nallavadu,<br/>Pondicherry</h2>
                     </div>
                 </div>
                 <div className="svgDiv">

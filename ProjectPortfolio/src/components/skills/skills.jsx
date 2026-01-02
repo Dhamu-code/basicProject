@@ -1,8 +1,12 @@
 import React from 'react'
 import './skills.css'
-import avatar from "../../assets/avatar.png"
+import avatar from "../../assets/avatar.jpg"
 import { SiHtml5, SiCss3, SiReact, SiAngular } from 'react-icons/si';
 import { FaApple, FaAndroid } from 'react-icons/fa';
+import { IoLogoNodejs } from "react-icons/io5";
+import { FaDatabase } from "react-icons/fa6";
+import Contact from '../contact/contact';
+import { Link } from 'react-scroll';
 
 const Skills = () => {
   return (
@@ -32,12 +36,12 @@ const Skills = () => {
                     <p>Angular</p>
                 </div>
                 <div className="appleIcon">
-                   <FaApple size={50} title="iOS"  color='#6b61ff'/>
-                    <p>IOs App</p>
+                   <IoLogoNodejs size={50} title="iOS"  color='#6b61ff'/>
+                    <p>NodeJs</p>
                 </div>
                 <div className="androidIcon">
-                     <FaAndroid size={50} title="Android"  color='#6b61ff'/>
-                    <p>Android</p>
+                     <FaDatabase size={50} title="Android"  color='#6b61ff'/>
+                    <p>Database</p>
                 </div>
             </div>
         </div>
@@ -45,44 +49,37 @@ const Skills = () => {
             <h1>Experience</h1>
             <section id='exp1'>
                 <div className="one">
-                    <h4>Jan 2021 - Present</h4>
+                    <h4>Sep - Dec 2025</h4>
                 </div>
                 <div className="two">
-                    <h3>Creative Director</h3>
-                    <p>pxdraft Ltd, UK</p>
+                    <h3>Full Stack Development Course</h3>
+                    <p>Easto Technologies, Pondicherry</p>
                 </div>
             </section>
             <section id='exp2'>
                 <div className="one">
-                    <h4>Jan 2021 - Present</h4>
+                    <h4>June - Nov 2025</h4>
                 </div>
                 <div className="two">
-                    <h3>Creative Director</h3>
-                    <p>pxdraft Ltd, UK</p>
+                    <h3>Delivery Executive & Purchase In-Charge</h3>
+                    <p>Taka Pizza, Pondicherry</p>
                 </div>
             </section>
             <section id='exp3'>
                 <div className="one">
-                    <h4>Jan 2021 - Present</h4>
+                    <h4>2020 - 2024</h4>
                 </div>
                 <div className="two">
-                    <h3>Creative Director</h3>
-                    <p>pxdraft Ltd, UK</p>
-                </div>
-            </section>
-            <section id='exp4'>
-                <div className="one">
-                    <h4>Jan 2021 - Present</h4>
-                </div>
-                <div className="two">
-                    <h3>Creative Director</h3>
-                    <p>pxdraft Ltd, UK</p>
+                    <h3>Sales Executive</h3>
+                    <p>Sri Vinayaga Electricals, Pondicherry</p>
                 </div>
             </section>
             <div className="avatar">
                 <img src={avatar} alt="avatar" />
             </div>
-            <button className="hireMe">Hire Me</button>
+            
+            <button className="hireMe"><Link to='Contact' smooth={true}>Hire Me</Link></button>
+            
         </div>
     </section>
     </>

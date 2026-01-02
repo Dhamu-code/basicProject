@@ -1,23 +1,26 @@
-#projects{
-    height: 140vh;
+#projects {
+    height: 100vh;
     width: 100%;
-    background-color: rgb(244, 241, 225);
+    background-color: #f3c770;
     overflow: hidden;
     margin-bottom: 2rem;
     padding-bottom: 2rem;
 }
-.latPro{
-     margin-top: 2rem;
+
+.latPro {
+    margin-top: 2rem;
     margin-left: 3rem;
     padding-top: 3rem;
     padding-left: 4rem;
 }
-.latPro h1{
-    font-family: 'Inter',sans-serif;
-    font-size:3rem;
+
+.latPro h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 3rem;
 }
-.portfolio{
-    background-color: rgb(236, 231, 210);
+
+.portfolio {
+    background-color: #f3c770;
     font-size: 1.2rem;
     width: 6.5rem;
     padding: 4px;
@@ -28,7 +31,8 @@
     transform: rotate(0.95turn);
     transform-origin: left;
 }
-.proGrid{
+
+.proGrid {
     font-family: 'Inter', sans-serif;
     margin-top: 2rem;
     margin-left: 7rem;
@@ -40,110 +44,356 @@
     grid-gap: 3rem 3rem;
     overflow: hidden;
 }
-.proGrid img{
+
+.proGrid img {
     height: 79%;
     width: 100%;
     border-bottom: 2px solid;
-} 
-.proGrid .first{
-    overflow: hidden;
-    border: 2px solid ;
-    background: white;
+    object-fit: cover;
 }
-.proGrid .first h3{
+
+/* Common styles for all project cards */
+.proGrid .first,
+.proGrid .sec,
+.proGrid .third,
+.proGrid .four,
+.proGrid .fifth,
+.proGrid .six {
+    overflow: hidden;
+    border: 2px solid;
+    background: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proGrid .first h3,
+.proGrid .sec h3,
+.proGrid .third h3,
+.proGrid .four h3,
+.proGrid .fifth h3,
+.proGrid .six h3 {
     padding-left: 1rem;
     padding-top: 0.5rem;
 }
-.proGrid .first p{
+
+.proGrid .first p,
+.proGrid .sec p,
+.proGrid .third p,
+.proGrid .four p,
+.proGrid .fifth p,
+.proGrid .six p {
     padding: 0.9rem;
     color: rgb(103, 101, 101);
     font-size: 1rem;
 }
-.proGrid .sec{
-    overflow: hidden;
-    border: 2px solid ;
-    background: white;
+
+/* Hover effects */
+.first:hover,
+.sec:hover,
+.third:hover,
+.four:hover,
+.fifth:hover,
+.six:hover {
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
 }
-.proGrid .sec h3{
-    padding-left: 1rem;
-    padding-top: 0.5rem;
+
+/* Large Desktops (1440px and above) */
+@media screen and (min-width: 1440px) {
+    .proGrid {
+        margin-left: 9rem;
+        grid-template-columns: repeat(3, 28%);
+        grid-gap: 3rem 4rem;
+    }
+    
+    .latPro {
+        margin-left: 5rem;
+        padding-left: 5rem;
+    }
+    
+    .latPro h1 {
+        font-size: 3.5rem;
+    }
 }
-.proGrid .sec p{
-    padding: 0.9rem;
-    color: rgb(103, 101, 101);
-    font-size: 1rem;
+
+/* Medium Desktops (1200px - 1439px) */
+@media screen and (min-width: 1200px) and (max-width: 1439px) {
+    .proGrid {
+        margin-left: 6rem;
+        grid-template-columns: repeat(3, 30%);
+        grid-gap: 2.5rem 2.5rem;
+    }
+    
+    .latPro {
+        margin-left: 4rem;
+        padding-left: 4rem;
+    }
 }
-.proGrid .third{
-    overflow: hidden;
-    border: 2px solid ;
-    background: white;
+
+/* Tablets Landscape (992px - 1199px) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    #projects {
+        height: auto;
+        min-height: 120vh;
+    }
+    
+    .proGrid {
+        margin-left: 4rem;
+        grid-template-columns: repeat(3, 30%);
+        grid-template-rows: repeat(2, 45vh);
+        grid-gap: 2rem 2rem;
+        padding-right: 2rem;
+    }
+    
+    .latPro {
+        margin-left: 2rem;
+        padding-left: 3rem;
+    }
+    
+    .latPro h1 {
+        font-size: 2.8rem;
+    }
 }
-.proGrid .third h3{
-    padding-left: 1rem;
-    padding-top: 0.5rem;
+
+/* Tablets Portrait (768px - 991px) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    #projects {
+        height: auto;
+        min-height: auto;
+        padding-bottom: 3rem;
+    }
+    
+    .proGrid {
+        margin-left: 3rem;
+        grid-template-columns: repeat(2, 45%);
+        grid-template-rows: repeat(3, 40vh);
+        grid-gap: 2rem 2rem;
+        padding-right: 3rem;
+    }
+    
+    .latPro {
+        margin-left: 1rem;
+        padding-left: 2rem;
+        padding-top: 2rem;
+    }
+    
+    .latPro h1 {
+        font-size: 2.5rem;
+    }
+    
+    .portfolio {
+        font-size: 1.1rem;
+        width: 6rem;
+    }
+    
+    .proGrid img {
+        height: 75%;
+    }
 }
-.proGrid .third p{
-    padding: 0.9rem;
-    color: rgb(103, 101, 101);
-    font-size: 1rem;
+
+/* Large Mobile (600px - 767px) */
+@media screen and (min-width: 600px) and (max-width: 767px) {
+    #projects {
+        height: auto;
+        min-height: auto;
+        padding-bottom: 2rem;
+    }
+    
+    .proGrid {
+        margin-left: 2rem;
+        grid-template-columns: repeat(2, 46%);
+        grid-template-rows: repeat(3, 35vh);
+        grid-gap: 1.5rem 1.5rem;
+        padding-right: 2rem;
+    }
+    
+    .latPro {
+        margin-left: 0.5rem;
+        padding-left: 1.5rem;
+        padding-top: 1.5rem;
+    }
+    
+    .latPro h1 {
+        font-size: 2.2rem;
+    }
+    
+    .portfolio {
+        font-size: 1rem;
+        width: 5.5rem;
+        margin-left: 0;
+    }
+    
+    .proGrid img {
+        height: 70%;
+    }
+    
+    .proGrid .first h3,
+    .proGrid .sec h3,
+    .proGrid .third h3,
+    .proGrid .four h3,
+    .proGrid .fifth h3,
+    .proGrid .six h3 {
+        font-size: 1.1rem;
+        padding-left: 0.8rem;
+    }
+    
+    .proGrid .first p,
+    .proGrid .sec p,
+    .proGrid .third p,
+    .proGrid .four p,
+    .proGrid .fifth p,
+    .proGrid .six p {
+        font-size: 0.9rem;
+        padding: 0.7rem;
+    }
 }
-.proGrid .four{
-    overflow: hidden;
-    border: 2px solid ;
-    background: white;
+
+/* Small Mobile (480px - 599px) */
+@media screen and (min-width: 480px) and (max-width: 599px) {
+    .proGrid {
+        margin-left: 1rem;
+        grid-template-columns: repeat(1, 90%);
+        grid-template-rows: repeat(6, 40vh);
+        grid-gap: 1.5rem;
+        padding-right: 1rem;
+        justify-content: center;
+    }
+    
+    .latPro {
+        margin-left: 0.5rem;
+        padding-left: 1rem;
+        padding-top: 1rem;
+        text-align: center;
+    }
+    
+    .latPro h1 {
+        font-size: 2rem;
+    }
+    
+    .portfolio {
+        font-size: 0.9rem;
+        width: 5rem;
+        padding: 3px;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .proGrid img {
+        height: 75%;
+    }
+    
+    .proGrid .first h3,
+    .proGrid .sec h3,
+    .proGrid .third h3,
+    .proGrid .four h3,
+    .proGrid .fifth h3,
+    .proGrid .six h3 {
+        font-size: 1rem;
+        padding-left: 0.7rem;
+    }
+    
+    .proGrid .first p,
+    .proGrid .sec p,
+    .proGrid .third p,
+    .proGrid .four p,
+    .proGrid .fifth p,
+    .proGrid .six p {
+        font-size: 0.85rem;
+        padding: 0.6rem;
+    }
 }
-.proGrid .four h3{
-    padding-left: 1rem;
-    padding-top: 0.5rem;
+
+/* Extra Small Mobile (below 480px) */
+@media screen and (max-width: 479px) {
+    #projects {
+        padding-bottom: 1.5rem;
+        margin-bottom: 1rem;
+        height: 100%;
+    }
+    
+    .proGrid {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(6, 35vh);
+        grid-gap: 1.2rem;
+        padding: 0;
+    }
+    
+    .latPro {
+        margin-left: 0;
+        padding-left: 0.5rem;
+        padding-top: 1rem;
+        text-align: center;
+    }
+    
+    .latPro h1 {
+        font-size: 1.8rem;
+        margin-top: 0.5rem;
+    }
+    
+    .portfolio {
+        font-size: 0.8rem;
+        width: 4.5rem;
+        padding: 2px;
+        margin: 0 auto;
+    }
+    
+    .proGrid img {
+        height: 70%;
+    }
+    
+    .proGrid .first h3,
+    .proGrid .sec h3,
+    .proGrid .third h3,
+    .proGrid .four h3,
+    .proGrid .fifth h3,
+    .proGrid .six h3 {
+        font-size: 0.95rem;
+        padding-left: 0.6rem;
+        padding-top: 0.3rem;
+    }
+    
+    .proGrid .first p,
+    .proGrid .sec p,
+    .proGrid .third p,
+    .proGrid .four p,
+    .proGrid .fifth p,
+    .proGrid .six p {
+        font-size: 0.8rem;
+        padding: 0.5rem;
+    }
 }
-.proGrid .four p{
-    padding: 0.9rem;
-    color: rgb(103, 101, 101);
-    font-size: 1rem;
+
+/* Height adjustments for landscape mobile */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+   
+    .proGrid {
+        grid-template-columns: repeat(3, 32%);
+        grid-template-rows: repeat(2, 60vh);
+        grid-gap: 1rem;
+    }
+    
+    .proGrid img {
+        height: 75%;
+    }
 }
-.proGrid .fifth{
-    overflow: hidden;
-    border: 2px solid ;
-    background: white;
+
+/* Fix for very short screens */
+@media screen and (max-height: 700px) and (min-width: 768px) {
+    
+    .proGrid {
+        grid-template-rows: repeat(2, 45vh);
+    }
 }
-.proGrid .fifth h3{
-    padding-left: 1rem;
-    padding-top: 0.5rem;
-}
-.proGrid .fifth p{
-    padding: 0.9rem;
-    color: rgb(103, 101, 101);
-    font-size: 1rem;
-}
-.proGrid .six{
-    overflow: hidden;
-    border: 2px solid ;
-    background: white;
-}
-.proGrid .six h3{
-    padding-left: 1rem;
-    padding-top: 0.5rem;
-}
-.proGrid .six p{
-    padding: 0.9rem;
-    color: rgb(103, 101, 101);
-    font-size: 1rem;
-}
-.first:hover{
-     box-shadow: 5px 5px 1px rgb(0,0,0.3);
-}
-.sec:hover{
-     box-shadow: 5px 5px 1px rgb(0,0,0.3);
-}
-.third:hover{
-     box-shadow: 5px 5px 1px rgb(0,0,0.3);
-}
-.four:hover{
-     box-shadow: 5px 5px 1px rgb(0,0,0.3);
-}
-.fifth:hover{
-     box-shadow: 5px 5px 1px rgb(0,0,0.3);
-}
-.six:hover{
-     box-shadow: 5px 5px 1px rgb(0,0,0.3);
+
+/* Fix for very tall screens */
+@media screen and (min-height: 1000px) and (min-width: 768px) {
+    
+    .proGrid {
+        grid-template-rows: repeat(2, 40vh);
+    }
+    
+    .proGrid img {
+        height: 80%;
+    }
 }

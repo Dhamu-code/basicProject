@@ -1,20 +1,23 @@
-#client{
+#client {
     height: 90vh;
     width: 100%;
     overflow: hidden;
     font-family: 'Inter', sans-serif;
 }
-.clientWord{
-     margin-top: 1rem;
+
+.clientWord {
+    margin-top: 1rem;
     margin-left: 3rem;
     padding-top: 2rem;
     padding-left: 4rem;
 }
-.clientWord h1{
-     font-family: 'Inter',sans-serif;
-    font-size:3rem;
+
+.clientWord h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 3rem;
 }
-.test{
+
+.test {
     font-size: 1.2rem;
     width: 7rem;
     padding: 4px;
@@ -25,54 +28,383 @@
     transform: rotate(0.95turn);
     transform-origin: left;
 }
-.clientFlex{
+
+.clientFlex {
     display: flex;
     height: 90%;
     justify-content: space-evenly;
     padding: 1rem;
     margin-top: 3rem;
 }
-.clientFlex img{
+
+.clientFlex img {
     height: 20vh;
-    border-radius: 48%;
     margin-top: 2rem;
+    object-fit: cover;
+    width: 20vh;
 }
-.clientFlex .one{
-    
+.clientFlex .img2{
+    height: 15vh;
+}
+
+.clientFlex .one,
+.clientFlex .two {
     width: 23vw;
     height: 50vh;
     text-align: center;
     border: 2px solid black;
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.clientFlex .one:hover,
+.clientFlex .two:hover {
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
 }
-.clientFlex .two{
-     width: 23vw;
-    height: 50vh;
-    text-align: center;
-    border: 2px solid black;
-}
-.clientFlex .three{
-     width: 23vw;
-    height: 50vh;
-    text-align: center;
-    border: 2px solid black;
-}
-.clientFlex p{
+
+.clientFlex p {
     color: rgb(103, 101, 101);
     padding: 0 1rem;
     font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 1rem;
 }
-.clientFlex #name{
+
+.clientFlex #name {
     font-weight: 700;
     color: black;
     margin-bottom: 0.5rem;
+    margin-top: auto;
 }
-.one:hover{
-    box-shadow: 5px 5px 1px rgb(0,0,0.3);
+
+/* Large Desktops (1440px and above) */
+@media screen and (min-width: 1440px) {
+    #client {
+        height: 85vh;
+    }
+    
+    .clientFlex .one,
+    .clientFlex .two {
+        width: 25vw;
+        height: 55vh;
+        padding: 2rem;
+    }
+    
+    .clientWord {
+        margin-left: 5rem;
+        padding-left: 5rem;
+    }
+    
+    .clientWord h1 {
+        font-size: 3.5rem;
+    }
 }
-.two:hover{
-    box-shadow: 5px 5px 1px rgb(0,0,0.3);
+
+/* Medium Desktops (1200px - 1439px) */
+@media screen and (min-width: 1200px) and (max-width: 1439px) {
+    .clientFlex .one,
+    .clientFlex .two {
+        width: 28vw;
+        height: 52vh;
+    }
+    
+    .clientWord {
+        margin-left: 4rem;
+        padding-left: 4rem;
+    }
 }
-.three:hover{
-    box-shadow: 5px 5px 1px rgb(0,0,0.3);
+
+/* Tablets Landscape (992px - 1199px) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    #client {
+        height: auto;
+        min-height: 80vh;
+    }
+    
+    .clientFlex {
+        margin-top: 2rem;
+        padding: 2rem;
+    }
+    
+    .clientFlex .one,
+    .clientFlex .two {
+        width: 35vw;
+        height: 50vh;
+    }
+    
+    .clientWord {
+        margin-left: 2rem;
+        padding-left: 3rem;
+    }
+    
+    .clientWord h1 {
+        font-size: 2.8rem;
+    }
 }
+
+/* Tablets Portrait (768px - 991px) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    #client {
+        height: auto;
+        min-height: auto;
+        padding-bottom: 3rem;
+    }
+    
+    .clientFlex {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 2rem;
+        padding: 2rem;
+    }
+    
+    .clientFlex .one,
+    .clientFlex .two {
+        width: 70vw;
+        height: auto;
+        min-height: 45vh;
+        padding: 1.5rem;
+    }
+    
+    .clientWord {
+        margin-left: 1rem;
+        padding-left: 2rem;
+    }
+    
+    .clientWord h1 {
+        font-size: 2.5rem;
+    }
+    
+    .test {
+        font-size: 1.1rem;
+        width: 6.5rem;
+    }
+    
+    .clientFlex img {
+        height: 18vh;
+        width: 18vh;
+        margin-top: 1rem;
+    }
+}
+
+/* Large Mobile (600px - 767px) */
+@media screen and (min-width: 600px) and (max-width: 767px) {
+    #client{
+        height: auto;
+    }
+    .test{
+        margin-top: 1rem;
+    }
+    .clientFlex {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+        padding: 1.5rem;
+    }
+    
+    .clientFlex .one,
+    .clientFlex .two {
+        width: 80vw;
+        height: auto;
+        min-height: 40vh;
+        padding: 1.2rem;
+    }
+    
+    .clientWord {
+        margin-left: 0.5rem;
+        padding-left: 1.5rem;
+        padding-top: 1rem;
+    }
+    
+    .clientWord h1 {
+        font-size: 2.2rem;
+    }
+    
+    .test {
+        font-size: 1rem;
+        width: 6rem;
+        margin-left: 0;
+    }
+    
+    .clientFlex img {
+        height: 16vh;
+        width: 16vh;
+        margin-top: 0.5rem;
+    }
+    
+    .clientFlex p {
+        font-size: 0.95rem;
+        padding: 0 0.8rem;
+    }
+}
+
+/* Small Mobile (480px - 599px) */
+@media screen and (min-width: 480px) and (max-width: 599px) {
+    #client {
+        padding-bottom: 2rem;
+        height: auto;
+    }
+    
+    .clientFlex {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+    
+    .clientFlex .one,
+    .clientFlex .two {
+        width: 90vw;
+        height: auto;
+        min-height: 35vh;
+        padding: 1rem;
+    }
+    
+    .clientWord {
+        margin-left: 0;
+        padding-left: 1rem;
+        padding-top: 0.5rem;
+        text-align: center;
+    }
+    
+    .clientWord h1 {
+        font-size: 2rem;
+    }
+    
+    .test {
+        font-size: 0.9rem;
+        width: 5.5rem;
+        padding: 3px;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .clientFlex img {
+        height: 14vh;
+        width: 14vh;
+        margin-top: 0.5rem;
+    }
+    
+    .clientFlex p {
+        font-size: 0.9rem;
+        padding: 0 0.6rem;
+    }
+    
+    .clientFlex #name {
+        font-size: 0.95rem;
+    }
+}
+
+/* Extra Small Mobile (below 480px) */
+@media screen and (max-width: 479px) {
+    #client {
+        padding-bottom: 1.5rem;
+    }
+    
+    .clientFlex {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 0.5rem;
+        padding: 0.5rem;
+    }
+    
+    .clientFlex .one,
+    .clientFlex .two {
+        width: 95vw;
+        height: auto;
+        min-height: 30vh;
+        padding: 0.8rem;
+    }
+    
+    .clientWord {
+        margin-right: 3rem;
+        padding-top: 1.5rem;
+        text-align: center;
+    }
+    
+    .clientWord h1 {
+        font-size: 1.8rem;
+    }
+    
+    .test {
+        font-size: 0.8rem;
+        width: 5rem;
+        padding: 2px;
+    }
+    
+    .clientFlex img {
+        height: 12vh;
+        width: 12vh;
+        margin-top: 0.3rem;
+    }
+    
+    .clientFlex p {
+        font-size: 0.85rem;
+        padding: 0 0.5rem;
+        margin-top: 0.5rem;
+    }
+    
+    .clientFlex #name {
+        font-size: 0.9rem;
+    }
+}
+
+/* Height adjustments for very short screens */
+@media screen and (max-height: 700px) and (min-width: 768px) {
+    #client {
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    .clientFlex {
+        height: auto;
+        margin-top: 1rem;
+    }
+    
+    .clientFlex .one,
+    .clientFlex .two {
+        height: auto;
+        min-height: 45vh;
+    }
+}
+
+/* Height adjustments for very tall screens */
+@media screen and (min-height: 1000px) and (min-width: 768px) {
+    #client {
+        height: 70vh;
+    }
+    
+    .clientFlex .one,
+    .clientFlex .two {
+        height: 45vh;
+    }
+}
+
+/* Fix for landscape mobile */
+@media screen and (max-width: 767px) and (orientation: landscape) {
+    #client {
+        height: auto;
+        min-height: auto;
+    }
+    
+    .clientFlex {
+        flex-direction: row;
+        gap: 1rem;
+    }
+    
+    .clientFlex .one,
+    .clientFlex .two {
+        width: 45vw;
+        height: auto;
+        min-height: 50vh;
+    }
+}
+
