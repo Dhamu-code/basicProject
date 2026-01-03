@@ -15,7 +15,12 @@ const Footer = () => {
             <FaFacebookF id='fb'/>
             <FaTwitter id='tw'/>
             <FaInstagram id='insta'/>
-            <CiLinkedin id='in'/>
+            
+            <a
+              href="https://www.linkedin.com/in/dhamodharanp13/"
+              target="_blank"
+              rel="noopener noreferrer"><CiLinkedin id='in'/></a>
+
             <FaPinterest id='pin'/>
         </div>
         <div className="copyRights">
